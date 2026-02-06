@@ -36,13 +36,6 @@ Over **4,000 skills** were scanned in-depth across the [OpenClaw skills registry
 | **Phase 3** | Deep re-audit of LOW | All 154 LOW-flagged skills were manually reviewed by Opus 4.6 to confirm they are safe for use |
 | **Cross-verification** | Multi-AI validation | Results cross-checked across Claude, Gemini, and Kimi to reduce false negatives |
 
-### Audit Results
-
-- All malware and suspicious skills have been **identified and removed**
-- **88 skills** originally flagged HIGH/MEDIUM were **confirmed harmless** on deep review and reclassified as SAFE
-- **All 154** LOW skills confirmed harmless on deep review
-- The remaining **395 skills** passed all checks and are listed below
-
 ---
 
 ## How to Use This List
