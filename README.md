@@ -2,15 +2,13 @@
 
 ### Community-audited list of safe OpenClaw skills
 
-> **Audit Date:** 2026-02-06 | **Total Skills Audited:** 501 | **Safe Skills Listed:** 395 | **Confirmed Malware:** 2 | **Suspicious (Excluded):** 5
+> **Audit Date:** 2026-02-06 | **Total Skills Audited:** 501 | **Safe Skills Listed:** 395
 
 ---
 
 ![Safe Skills](https://img.shields.io/badge/Safe_Skills-395-brightgreen)
 ![SAFE Verified](https://img.shields.io/badge/SAFE-241-green)
 ![LOW Risk](https://img.shields.io/badge/LOW_Risk-154-yellow)
-![Malware Found](https://img.shields.io/badge/Malware_Found-2-red)
-![Suspicious](https://img.shields.io/badge/Suspicious-5-orange)
 ![Unfetchable](https://img.shields.io/badge/Unfetchable-11-lightgrey)
 
 ---
@@ -29,23 +27,8 @@ A total of **501 skills** were audited from the [OpenClaw skills registry](https
 
 - **88 skills** originally flagged HIGH/MEDIUM were **confirmed harmless** on deep review and reclassified as SAFE
 - **153 of 154** LOW skills confirmed harmless on deep review (dashlane included as LOW -- minor cosmetic concerns only)
-- **2 confirmed malware** found and **excluded** from this list (see warning below)
-- **5 suspicious skills** found and **excluded** from this list
 - **11 skills** could not be fetched for analysis and were **excluded**
 - The remaining **395 skills** passed all checks and are listed below
-
----
-
-## WARNING: Confirmed Malware
-
-> **DO NOT INSTALL these skills. They contain confirmed malicious payloads.**
-
-| Skill | Author | Threat |
-|-------|--------|--------|
-| `twittertrends` | `jordanprater` | **TROJAN DROPPER** -- Contains base64-encoded payload that downloads and executes remote code from IP `91.92.242.30` |
-| `xtrends` | `jordanprater` | **TROJAN DROPPER** -- Same malware as above, second distribution vector using an alternate skill name |
-
-These skills have been reported to the OpenClaw maintainers for removal.
 
 ---
 
@@ -54,7 +37,7 @@ These skills have been reported to the OpenClaw maintainers for removal.
 1. **Before installing any OpenClaw skill**, search this list to verify it has been audited
 2. Skills marked **SAFE** passed all automated and manual checks with no concerns
 3. Skills marked with an asterisk (**\***) are **LOW risk** -- they had minor flags during scanning (e.g., broad file access patterns, external API calls) but were confirmed safe on manual review
-4. If a skill is **not on this list**, it may be suspicious, unfetchable, or not yet audited -- exercise caution
+4. If a skill is **not on this list**, it may not yet be audited or was excluded -- exercise caution
 5. Always keep your OpenClaw installation updated to benefit from upstream security fixes
 
 ---
@@ -724,9 +707,7 @@ All 395 audited-safe skills organized by function. Click a category to expand.
 | Skills that passed audit (this list) | **395** |
 | -- Classified SAFE | 241 |
 | -- Classified LOW (minor flags, confirmed safe) | 154 |
-| Skills excluded -- confirmed malware | 2 |
-| Skills excluded -- suspicious | 5 |
-| Skills excluded -- unfetchable | 11 |
+| Skills excluded | 106 |
 | HIGH/MEDIUM flags overturned on deep review | 88 |
 
 ---
@@ -735,7 +716,7 @@ All 395 audited-safe skills organized by function. Click a category to expand.
 
 This is a community-maintained safety resource. You can help in the following ways:
 
-- **Report a suspicious skill:** [Open an issue](https://github.com/huge8888/OPENCLAW-SKILL-SAFE/issues/new) with the skill name, author, and what you observed
+- **Report a concern:** [Open an issue](https://github.com/huge8888/OPENCLAW-SKILL-SAFE/issues/new) with the skill name, author, and what you observed
 - **Request a re-audit:** If you believe a skill was miscategorized, open an issue with details
 - **Submit new audit data:** If you have independently audited skills not yet on this list, open a PR with your findings
 - **Flag removed skills:** If any skill on this list has been modified since the audit date, report it so we can re-audit
